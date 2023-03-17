@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Tic Tac game </h1>
+    <div class="tic-tac-toe">
+        <div class="row">
+          <div class="cell" id="cell1" onclick={handleClick(1)}></div>
+          <div class="cell" id="cell2" onclick={handleClick(2)}></div>
+          <div class="cell" id="cell3" onclick={handleClick(3)}></div>
+        </div>
+        <div class="row">
+          <div class="cell" id="cell4" onclick={handleClick(4)}></div>
+          <div class="cell" id="cell5" onclick={handleClick(5)}></div>
+          <div class="cell" id="cell6" onclick={handleClick(6)}></div>
+        </div>
+        <div class="row">
+          <div class="cell" id="cell7" onclick={handleClick(7)}></div>
+          <div class="cell" id="cell8" onclick={handleClick(8)}></div>
+          <div class="cell" id="cell9" onclick={handleClick(9)}></div>
+        </div>
+      </div>
+      <section id="turn-info"> Playes O to Move</section>
+      <section id="result"></section>
+      <section><button id="btn" onclick={handelRestart()}> Restart Game </button></section>
+
+ <script src="script.js"></script>   
+</body>
+</html>
